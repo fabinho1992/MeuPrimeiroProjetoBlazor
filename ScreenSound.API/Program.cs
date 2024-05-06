@@ -15,6 +15,8 @@ builder.Services.AddDbContext<ScreenSoundContext>((options) => {
             .UseSqlServer(builder.Configuration["ConnectionStrings:ScreenSoundDB"])
             .UseLazyLoadingProxies();
 });
+
+
 builder.Services.AddTransient<DAL<Artista>>();
 builder.Services.AddTransient<DAL<Musica>>();
 builder.Services.AddTransient<DAL<Genero>>();
@@ -31,6 +33,7 @@ app.UseCors(options =>
     options.AllowAnyOrigin()
     .AllowAnyMethod()
     .AllowAnyHeader();
+
 
 });
 
