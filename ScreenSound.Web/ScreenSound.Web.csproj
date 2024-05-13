@@ -7,9 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\CadastrarArtista.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="MudBlazor" Version="6.19.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\CadastrarArtista.razor" />
+    <None Include="wwwroot\Images\screensound-logo.png" />
   </ItemGroup>
 
 </Project>
