@@ -1,11 +1,13 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
 }
 
 div.mud-main-content.main-content {
     background: linear-gradient(180deg, #96F 0%, #000 100%) !important;
     margin-top: 64px;
     height: 100vh;
+    
 }
 
 h1:focus {
